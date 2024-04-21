@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create book</title>
+</head>
+<body>
+<form action="#" th:action="@{/book-create}" th:object="${book}" method="post">
+    <label for="bookTitle">book title</label>
+    <input type="text" th:field="*{bookTitle}" id="bookTitle" placeholder="book title">
+    <label for="author">author</label>
+    <input type="text" th:field="*{author}" id="author" placeholder="author">
+    <input type="submit" value="Create Book">
+</form>
+</body>
+</html>
